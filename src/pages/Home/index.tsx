@@ -53,13 +53,13 @@ const Home = () => {
     
     const API_KEY = ''
 
-    const [search, setSearch] = useState('');
-    const [albums, setAlbums] = useState([]);
+    const [search, setSearch] = useState<string>('');
+    const [albums, setAlbums] = useState<string[]>([]);
 
-    const [tags, setTags] = useState([]);
+    const [tags, setTags] = useState<Tag[]>([]);
     const [informations, setInformations] = useState([]);
 
-    const [tracks, setTracks] = useState([]);
+    const [tracks, setTracks] = useState<Track[]>([]);
     const [albumInfo, setAlbumInfo] = useState<AlbumInfo>({} as AlbumInfo);
 
 
